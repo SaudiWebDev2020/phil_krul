@@ -1,0 +1,7 @@
+{% for product in products %}
+    <tr>
+        <th scope="row">{{ product.id }}</th>
+        <td>{{ product.title }}</td>
+        <td>{{ product.created_at|date:'SHORT_DATE_FORMAT' }}</td>
+    </tr>
+{% endfor %}

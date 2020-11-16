@@ -15,3 +15,17 @@
 #        - add new node to the end of the list
 #    - removeBack()
 #       - removes and returns the last node of the list
+
+def Node():
+    def __init__(self, value):
+        self.val = value
+        self.next = None
+
+def SLList():
+    def __init__(self):
+        self.head = None
+    def add_front(self, value):
+        new_node = Node(value)
+        new_node.next = self.head
+        self.head = new_node
+        return self
