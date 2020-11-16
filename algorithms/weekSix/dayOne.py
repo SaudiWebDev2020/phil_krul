@@ -21,3 +21,50 @@
 # Write a recursive function that, given a sorted array and a value, determines whether the value is found within the array. For example,
 # rBinarySearch([1,3,5,6], 4) = false
 # rBinarySearch([4,5,6,8,12], 5) = true
+
+
+
+
+
+def sayHi():
+    for x in range(6):
+        print(f'Hi: {x}')
+
+sayHi()
+
+
+def rSayHi(x = 0):
+    if x > 5:
+        return
+    print(f'recurseive sayHi: {x}')
+    x += 1
+    rSayHi(x)
+
+
+rSayHi()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
